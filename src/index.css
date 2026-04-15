@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'roboto';
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111111;
+  color: white;
+  box-shadow: 0 5px 15px grey;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Nav */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Button */
+.join-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #00ff9de0;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    flex-direction: column;
+    background: #111;
+    width: 70%;
+    height: 100vh;
+    text-align: start;
+    padding: 1em;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
