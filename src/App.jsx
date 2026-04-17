@@ -1,5 +1,6 @@
 
 import { Section } from './components/Section';
+import { About } from './components/About';
 import { Header } from './Header';
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <Header />
     <Section />
+    <About />
     </>
   )
 }
