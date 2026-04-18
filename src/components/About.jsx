@@ -1,4 +1,4 @@
-
+import first from "../assets/use-image.png";
 export function About() {
 
    return(
@@ -18,7 +18,7 @@ export function About() {
    </div>
 
    <div className="about-image-container">
-   <img src="use-image.png" alt="" />
+   <img src={first} alt="" />
    </div>
    </div>
     </div>
