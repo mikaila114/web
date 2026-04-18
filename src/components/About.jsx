@@ -18,7 +18,7 @@ export function About() {
    </div>
 
    <div className="about-image-container">
-   <div>h</div>
+   <img src="use-image.png" alt="" />
    </div>
    </div>
     </div>

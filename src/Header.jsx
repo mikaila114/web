@@ -35,7 +35,6 @@ export function Header() {
 
 
 
-
 import { useState } from "react";
 
 export function Header() {
@@ -46,8 +45,8 @@ export function Header() {
   return (
     <header className="header">
       <div className="logo">Mikaila Dev</div>
+
       <ul className={isOpen ? "nav-links active" : "nav-links"}>
-     
         {navLinks.map((nav) => (
           <li key={nav}>
             <a href={`#${nav.toLowerCase()}`}>{nav}</a>
@@ -66,6 +65,12 @@ export function Header() {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
+
+      {/* Blur Overlay */}
+      <div
+        className={isOpen ? "remove-blur active" : "remove-blur"}
+        onClick={() => setIsOpen(false)}
+      ></div>
     </header>
   );
 }
